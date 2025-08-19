@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Page</h1>
+            <p>Explore these JavaScript-powered features</p>
+        </header>
+        
+        <div class="features">
+            <section id="dark-mode-section">
+                <h2>Dark Mode Toggle</h2>
+                <p>Switch between light and dark themes for comfortable browsing</p>
+                <button id="dark-mode-toggle">Enable Dark Mode</button>
+            </section>
+            
+            <section id="counter-section">
+                <h2>Interactive Counter</h2>
+                <p>Use the buttons to change the counter value</p>
+                <div class="interactive-controls">
+                    <button id="decrement-btn">-</button>
+                    <button id="reset-btn">Reset</button>
+                    <button id="increment-btn">+</button>
+                </div>
+                <div class="counter-display">Count: 0</div>
+            </section>
+        </div>
+        
+        <section id="faq-section">
+            <h2>FAQ Section</h2>
+            <p>Click on questions to reveal answers</p>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is JavaScript used for?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    JavaScript is a programming language primarily used for creating interactive web pages and web applications.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What are event listeners?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Event listeners are functions that wait for a specific event (like a click or keypress) to occur on a particular element, then execute code in response.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is DOM manipulation?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    DOM manipulation refers to using JavaScript to modify the content, structure, or style of a web page after it has loaded.
+                </div>
+            </div>
+        </section>
+        
+        <section id="form-section">
+            <h2>Contact Form</h2>
+            <p>Please fill out this form with validation</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your full name">
+                    <div class="error" id="name-error">Please enter a valid name (letters and spaces only)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email address">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with one uppercase letter and one number</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Your message"></textarea>
+                    <div class="error" id="message-error">Message must be at least 10 characters long</div>
+                </div>
+                
+                <button type="submit">Submit</button>
+                
+                <div class="success-message" id="success-message">
+                    Form submitted successfully!
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
